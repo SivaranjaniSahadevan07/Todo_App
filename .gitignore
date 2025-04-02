@@ -1,6 +1,6 @@
 backend/node_modules/
 frontend/node_modules/
-frontend/src/tests
+frontend/src/tests/
 
 # Logs
 logs

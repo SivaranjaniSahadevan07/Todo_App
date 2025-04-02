@@ -18,6 +18,7 @@ export default function Todos() {
     }, []);
 
     const fetchTodos = () => {
+        console.log(API_URL);
         Axios.get(API_URL)
             .then(res => setTodos(res.data))
             .catch(err => console.error(err.message));

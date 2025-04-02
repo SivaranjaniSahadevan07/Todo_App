@@ -18,14 +18,12 @@ export default function Todos() {
     }, []);
 
     const fetchTodos = () => {
-        console.log(API_URL);
         Axios.get(API_URL)
             .then(res => setTodos(res.data))
             .catch(err => console.error(err.message));
     };
 
     const handleAddTodo = (newTodo) => {
-        console.log(API_URL);
         Axios.post(API_URL, newTodo)
             .then(fetchTodos)
             .catch(err => console.error(err.message));

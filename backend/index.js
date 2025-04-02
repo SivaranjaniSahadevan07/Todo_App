@@ -9,7 +9,8 @@ const port = process.env.PORT || 5000;
 const host = process.env.HOST || 'localhost';
 
 // middlewares
-app.use(cors())
+app.use(cors({ origin: process.env.FRONTEND_URL, credentials: true }));
+
 app.use(express.json())
 app.use(express.static(path.join(__dirname, 'public')))
 

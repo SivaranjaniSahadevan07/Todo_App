@@ -5,7 +5,7 @@ import TodoList from './TodoList';
 import Header from './Header';
 import Footer from './Footer';
 
-const API_URL = 'https://todo-app-b5fr.onrender.com';
+const API_URL = process.env.REACT_APP_API_URL || 'https://todo-app-b5fr.onrender.com';
 
 export default function Todos() {
     const [todos, setTodos] = useState([]);

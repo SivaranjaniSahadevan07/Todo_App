@@ -25,6 +25,7 @@ export default function Todos() {
     };
 
     const handleAddTodo = (newTodo) => {
+        console.log(API_URL);
         Axios.post(API_URL, newTodo)
             .then(fetchTodos)
             .catch(err => console.error(err.message));

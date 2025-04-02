@@ -9,7 +9,12 @@ const port = process.env.PORT || 5000;
 const host = process.env.HOST || 'localhost';
 
 // middlewares
-app.use(cors({ origin: process.env.FRONTEND_URL, credentials: true }));
+app.use(cors({
+    origin: process.env.FRONTEND_URL,
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"]
+}));
 
 app.use(express.json())
 app.use(express.static(path.join(__dirname, 'public')))
@@ -23,12 +28,12 @@ connectDB()
 app.use('/', todoRoute);
 
 // handles invalid routes
-app.get('*', ( req, res)=>{
+app.get('*', (req, res) => {
     res.status(404).sendFile(path.join(__dirname, 'public', '404.html'))
 })
 
 // error handling route
-app.use('/', (err, req, res, next)=>{
+app.use('/', (err, req, res, next) => {
     res.status(500).send('Internal server error')
 })
 

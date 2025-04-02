@@ -4,7 +4,7 @@ const cors = require('cors')
 const path = require('path')
 const dotenv = require('dotenv')
 
-dotenv.config({path:path.join(__dirname,"config/config.env")});
+dotenv.config();
 const port = process.env.PORT || 5000;
 
 // middlewares

@@ -1,7 +1,6 @@
 import React from 'react';
 import Todos from './components/Todos'
-import 'bootstrap/dist/css/bootstrap.min.css';
-// import './App.css';
+import './App.css';
 
 function App() {
   return (

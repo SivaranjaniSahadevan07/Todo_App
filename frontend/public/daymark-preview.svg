@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="920" viewBox="0 0 1440 920" fill="none">
+  <defs>
+    <linearGradient id="canvas" x1="96" y1="88" x2="1344" y2="832" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FAFE"/>
+      <stop offset="1" stop-color="#EAF1FF"/>
+    </linearGradient>
+    <filter id="panel-shadow" x="178" y="273" width="1084" height="548" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+  <rect width="1440" height="920" fill="url(#canvas)"/>
+  <rect width="1440" height="62" fill="#FFFFFF"/>
+  <path d="M0 61.5H1440" stroke="#E5E9EF"/>
+  <rect x="36" y="15" width="32" height="32" rx="9" fill="#2864E8"/>
+  <path d="m44 32 5 5 11-12" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="79" y="36" fill="#202A3A" font-family="Arial,sans-serif" font-size="15" font-weight="700">daymark<tspan fill="#2864E8">.</tspan></text>
+  <path d="M176 17V45" stroke="#E5E9EF"/>
+  <text x="196" y="35" fill="#394659" font-family="Arial,sans-serif" font-size="13" font-weight="700">Dashboard</text>
+  <rect x="998" y="13" width="300" height="36" rx="18" fill="#F1F3F6"/>
+  <circle cx="1017" cy="30" r="5" stroke="#8B96A4" stroke-width="1.4"/>
+  <path d="m1021 34 4 4" stroke="#8B96A4" stroke-width="1.4" stroke-linecap="round"/>
+  <text x="1035" y="34" fill="#8993A0" font-family="Arial,sans-serif" font-size="11">Search tasks...</text>
+  <text x="1332" y="34" fill="#6F7B8B" font-family="Arial,sans-serif" font-size="11">Fri, Oct 23</text>
+  <rect x="320" y="84" width="800" height="132" rx="9" fill="#FFFFFF" stroke="#E5E9EF"/>
+  <rect x="340" y="102" width="32" height="32" rx="9" fill="#E4EDFF"/>
+  <path d="M349 112h14M349 118h14M349 124h8" stroke="#2864E8" stroke-width="1.8" stroke-linecap="round"/>
+  <rect x="1044" y="108" width="55" height="19" rx="10" fill="#E4EDFF"/>
+  <text x="1071.5" y="121" text-anchor="middle" fill="#2864E8" font-family="Arial,sans-serif" font-size="9" font-weight="700">ALL LISTS</text>
+  <text x="340" y="156" fill="#5E6A79" font-family="Arial,sans-serif" font-size="10">Total tasks</text>
+  <text x="340" y="190" fill="#202A3A" font-family="Arial,sans-serif" font-size="27" font-weight="700">24</text>
+  <text x="340" y="207" fill="#8993A0" font-family="Arial,sans-serif" font-size="9">Across all your task lists</text>
+  <rect x="584" y="84" width="252" height="132" rx="9" fill="#FFFFFF" stroke="#E5E9EF"/>
+  <rect x="603" y="102" width="32" height="32" rx="9" fill="#E0F7E9"/>
+  <path d="m612 118 4 4 9-10" stroke="#17A35B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="771" y="108" width="44" height="19" rx="10" fill="#E0F7E9"/>
+  <text x="793" y="121" text-anchor="middle" fill="#17A35B" font-family="Arial,sans-serif" font-size="9" font-weight="700">75%</text>
+  <text x="603" y="156" fill="#5E6A79" font-family="Arial,sans-serif" font-size="10">Completed</text>
+  <text x="603" y="190" fill="#202A3A" font-family="Arial,sans-serif" font-size="27" font-weight="700">18</text>
+  <text x="603" y="207" fill="#8993A0" font-family="Arial,sans-serif" font-size="9">Progress, one task at a time</text>
+  <rect x="848" y="84" width="272" height="132" rx="9" fill="#FFFFFF" stroke="#E5E9EF"/>
+  <rect x="867" y="102" width="32" height="32" rx="9" fill="#FFF0DC"/>
+  <circle cx="883" cy="118" r="8" stroke="#E67822" stroke-width="1.7"/>
+  <path d="M883 113v5l4 2" stroke="#E67822" stroke-width="1.7" stroke-linecap="round"/>
+  <rect x="1045" y="108" width="60" height="19" rx="10" fill="#FFF0DC"/>
+  <text x="1075" y="121" text-anchor="middle" fill="#E67822" font-family="Arial,sans-serif" font-size="8" font-weight="700">DUE TODAY</text>
+  <text x="867" y="156" fill="#5E6A79" font-family="Arial,sans-serif" font-size="10">Pending</text>
+  <text x="867" y="190" fill="#202A3A" font-family="Arial,sans-serif" font-size="27" font-weight="700">6</text>
+  <text x="867" y="207" fill="#8993A0" font-family="Arial,sans-serif" font-size="9">2 due today</text>
+  <text x="320" y="266" fill="#202A3A" font-family="Arial,sans-serif" font-size="22" font-weight="700">Good morning.</text>
+  <text x="320" y="287" fill="#6F7B8B" font-family="Arial,sans-serif" font-size="11">You have 6 tasks to keep moving today.</text>
+  <rect x="324" y="301" width="800" height="510" rx="11" fill="#20365A" fill-opacity=".06" filter="url(#panel-shadow)"/>
+  <rect x="320" y="296" width="800" height="510" rx="10" fill="#FFFFFF" stroke="#E5E9EF"/>
+  <text x="340" y="329" fill="#202A3A" font-family="Arial,sans-serif" font-size="14" font-weight="700">Today's tasks</text>
+  <text x="340" y="348" fill="#6F7B8B" font-family="Arial,sans-serif" font-size="10">6 tasks remaining</text>
+  <rect x="984" y="311" width="116" height="35" rx="7" fill="#2864E8"/>
+  <path d="M1001 328h10m-5-5v10" stroke="white" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="1018" y="332" fill="white" font-family="Arial,sans-serif" font-size="10" font-weight="700">Add new task</text>
+  <rect x="340" y="367" width="92" height="28" rx="7" fill="#2864E8"/>
+  <text x="351" y="385" fill="white" font-family="Arial,sans-serif" font-size="10">All tasks</text>
+  <text x="414" y="385" fill="#D9E5FF" font-family="Arial,sans-serif" font-size="9">6</text>
+  <rect x="438" y="367" width="102" height="28" rx="7" fill="#F0F2F5"/>
+  <text x="449" y="385" fill="#4F5B6B" font-family="Arial,sans-serif" font-size="10">Due today</text>
+  <text x="519" y="385" fill="#7E8896" font-family="Arial,sans-serif" font-size="9">2</text>
+  <rect x="546" y="367" width="98" height="28" rx="7" fill="#F0F2F5"/>
+  <text x="557" y="385" fill="#4F5B6B" font-family="Arial,sans-serif" font-size="10">Completed</text>
+  <text x="625" y="385" fill="#7E8896" font-family="Arial,sans-serif" font-size="9">18</text>
+  <rect x="338" y="407" width="764" height="62" rx="9" fill="#F8F9FB" stroke="#E8EBEF"/>
+  <rect x="351" y="421" width="16" height="16" rx="3" fill="white" stroke="#AAB2BD"/>
+  <text x="379" y="430" fill="#202A3A" font-family="Arial,sans-serif" font-size="11" font-weight="700">Review project proposal</text>
+  <text x="379" y="449" fill="#7D8794" font-family="Arial,sans-serif" font-size="9">◷ Due today</text>
+  <rect x="1035" y="426" width="55" height="20" rx="10" fill="#E2EBFF"/>
+  <text x="1062.5" y="440" text-anchor="middle" fill="#4967A4" font-family="Arial,sans-serif" font-size="9" font-weight="700">Scheduled</text>
+  <rect x="338" y="477" width="764" height="62" rx="9" fill="#F2FCF5" stroke="#D9F2E2"/>
+  <rect x="351" y="491" width="16" height="16" rx="3" fill="#2864E8" stroke="#2864E8"/>
+  <path d="m355 499 3 3 5-6" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="379" y="500" fill="#88948E" font-family="Arial,sans-serif" font-size="11" font-weight="700" text-decoration="line-through">Team meeting notes</text>
+  <text x="379" y="519" fill="#7D8794" font-family="Arial,sans-serif" font-size="9">◷ Completed today</text>
+  <rect x="1050" y="496" width="40" height="20" rx="10" fill="#DCF7E5"/>
+  <text x="1070" y="510" text-anchor="middle" fill="#22864A" font-family="Arial,sans-serif" font-size="9" font-weight="700">Done</text>
+  <rect x="338" y="547" width="764" height="62" rx="9" fill="#F8F9FB" stroke="#E8EBEF"/>
+  <rect x="351" y="561" width="16" height="16" rx="3" fill="white" stroke="#AAB2BD"/>
+  <text x="379" y="570" fill="#202A3A" font-family="Arial,sans-serif" font-size="11" font-weight="700">Update documentation</text>
+  <text x="379" y="589" fill="#7D8794" font-family="Arial,sans-serif" font-size="9">◷ Due tomorrow</text>
+  <rect x="1035" y="566" width="55" height="20" rx="10" fill="#E2EBFF"/>
+  <text x="1062.5" y="580" text-anchor="middle" fill="#4967A4" font-family="Arial,sans-serif" font-size="9" font-weight="700">Scheduled</text>
+  <rect x="338" y="617" width="764" height="62" rx="9" fill="#F8F9FB" stroke="#E8EBEF"/>
+  <rect x="351" y="631" width="16" height="16" rx="3" fill="white" stroke="#AAB2BD"/>
+  <text x="379" y="640" fill="#202A3A" font-family="Arial,sans-serif" font-size="11" font-weight="700">Prepare presentation slides</text>
+  <text x="379" y="659" fill="#7D8794" font-family="Arial,sans-serif" font-size="9">◷ Due Friday</text>
+  <rect x="1035" y="636" width="55" height="20" rx="10" fill="#E2EBFF"/>
+  <text x="1062.5" y="650" text-anchor="middle" fill="#4967A4" font-family="Arial,sans-serif" font-size="9" font-weight="700">Scheduled</text>
+  <rect x="338" y="687" width="764" height="62" rx="9" fill="#F8F9FB" stroke="#E8EBEF"/>
+  <rect x="351" y="701" width="16" height="16" rx="3" fill="white" stroke="#AAB2BD"/>
+  <text x="379" y="710" fill="#202A3A" font-family="Arial,sans-serif" font-size="11" font-weight="700">Code review for new feature</text>
+  <text x="379" y="729" fill="#7D8794" font-family="Arial,sans-serif" font-size="9">◷ No due date</text>
+  <rect x="1035" y="706" width="55" height="20" rx="10" fill="#E2EBFF"/>
+  <text x="1062.5" y="720" text-anchor="middle" fill="#4967A4" font-family="Arial,sans-serif" font-size="9" font-weight="700">In progress</text>
+  <path d="M338 770H1102" stroke="#EDF0F4"/>
+  <text x="340" y="791" fill="#6F7B8B" font-family="Arial,sans-serif" font-size="9">Showing 5 of 6 tasks</text>
+  <text x="1088" y="791" text-anchor="end" fill="#2864E8" font-family="Arial,sans-serif" font-size="9" font-weight="700">View all tasks  →</text>
+</svg>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function TodoForm({ onAddTodo }) {
+export default function TodoForm({ onAddTodo, onCancel }) {
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
     const [deadline, setDeadline] = useState("");
@@ -14,32 +14,28 @@ export default function TodoForm({ onAddTodo }) {
     };
 
     return (
-        <div className="container p-4 pb-0">
-            <form onSubmit={handleSubmit} className="mb-5 p-4 border border-primary rounded mx-auto">
-                <fieldset className="border p-3 rounded">
-                    <legend className="float-none w-auto px-2 text-primary fw-bold">Create New Todo</legend>
+        <section className="composer" aria-labelledby="composer-title">
+            <div className="section-heading">
+                <div>
+                    <h2 id="composer-title">Add a task</h2>
+                    <p>Keep it simple. You can add details now or later.</p>
+                </div>
+            </div>
+            <form onSubmit={handleSubmit} className="todo-form">
+                <label htmlFor="todo-title">Task name</label>
+                <input id="todo-title" type="text" placeholder="What needs doing?" value={title} onChange={(e) => setTitle(e.target.value)} required maxLength="120" />
 
-                    <div className="mb-3">
-                        <label className="form-label">Enter Title <span className='text-danger'>*</span></label>
-                        <input type="text" className="form-control" value={title} onChange={(e) => setTitle(e.target.value)} required />
-                    </div>
+                <label htmlFor="todo-description">A few details</label>
+                <textarea id="todo-description" placeholder="Add a note to future you..." value={description} onChange={(e) => setDescription(e.target.value)} required rows="3" maxLength="500" />
 
-                    <div className="mb-3">
-                        <label className="form-label">Enter Description <span className='text-danger'>*</span></label>
-                        <textarea className="form-control" value={description} onChange={(e) => setDescription(e.target.value)} required />
-                    </div>
+                <label htmlFor="todo-deadline">Due date <span>OPTIONAL</span></label>
+                <input id="todo-deadline" type="date" value={deadline} onChange={(e) => setDeadline(e.target.value)} min={new Date().toISOString().split('T')[0]} />
 
-                    <div className="mb-3">
-                        <label className="form-label">Enter Deadline</label>
-                        <input type="date" className="form-control" value={deadline} onChange={(e) => setDeadline(e.target.value)} min={new Date().toISOString().split('T')[0]} />
-                    </div>
-
-                    <div className="d-flex justify-content-center">
-                        <button type="submit" className="btn btn-primary">Add Todo</button>
-                    </div>
-                </fieldset>
+                <div className="form-actions">
+                    <button type="submit" className="add-button"><span aria-hidden="true">+</span> Add task</button>
+                    <button type="button" className="cancel-button" onClick={onCancel}>Cancel</button>
+                </div>
             </form>
-
-        </div>
+        </section>
     );
 }

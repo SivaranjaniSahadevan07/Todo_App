@@ -41,13 +41,17 @@ export default function TodoList({ todos, editId, editedTitle, editedDescription
         const isOverdue = !todo.isCompleted && todo.deadline && dateKey(todo.deadline) < todayKey();
 
         return (
-            <article className={`task-row${todo.isCompleted ? ' task-row--complete' : ''}`} key={todo._id}>
+            <article className={`task-row${todo.isCompleted ? ' task-row--complete' : ''}${editId === todo._id ? ' task-row--editing' : ''}`} key={todo._id}>
                 {editId === todo._id ? (
                     <form className="edit-form" onSubmit={onUpdate}>
-                        <label htmlFor={`edit-title-${todo._id}`}>Task name</label>
-                        <input id={`edit-title-${todo._id}`} value={editedTitle} onChange={(event) => setEditedTitle(event.target.value)} required maxLength="120" />
-                        <label htmlFor={`edit-description-${todo._id}`}>Details</label>
-                        <textarea id={`edit-description-${todo._id}`} value={editedDescription} onChange={(event) => setEditedDescription(event.target.value)} required rows="3" maxLength="500" />
+                        <div className="edit-field">
+                            <label htmlFor={`edit-title-${todo._id}`}>Task name</label>
+                            <input id={`edit-title-${todo._id}`} value={editedTitle} onChange={(event) => setEditedTitle(event.target.value)} required maxLength="120" />
+                        </div>
+                        <div className="edit-field edit-field--wide">
+                            <label htmlFor={`edit-description-${todo._id}`}>Details</label>
+                            <textarea id={`edit-description-${todo._id}`} value={editedDescription} onChange={(event) => setEditedDescription(event.target.value)} required rows="3" maxLength="500" />
+                        </div>
                         <div className="task-actions">
                             <button className="text-button text-button--accent" type="submit">Save changes</button>
                             <button className="text-button" type="button" onClick={() => setEditId(null)}>Cancel</button>
